@@ -6,7 +6,7 @@ const { initDb} = require('./models/connect');
 
 
 // Serve the frontend folder
-app.use(express.static(path.join(__dirname, './week01')));
+app.use(express.static(path.join(__dirname, './cse341-project1')));
 
 const port = 8080;
 
