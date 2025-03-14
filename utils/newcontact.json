@@ -1,7 +1,25 @@
-{
+[
+  {
   "firstName": "Kevin",
   "lastName": "Grimm",
   "email" : "kevin.grimm@cse341.edu",
   "favoriteColor": "Blue",
   "birthday" : "1985-05-15"
+},
+
+{
+  "firstName": "Charbel",
+  "lastName": "Azzi",
+  "email" : "charbel.azzi@cse341.edu",
+  "favoriteColor": "Brown",
+  "birthday" : "1990-08-15"
+},
+
+{
+  "firstName": "Dan",
+  "lastName": "Barness",
+  "email" : "dan.barness@cse341.edu",
+  "favoriteColor": "Pink",
+  "birthday" : "1992-08-15"
 }
+]
