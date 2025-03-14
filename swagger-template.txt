@@ -1,0 +1,28 @@
+/**
+ * @swagger
+ * /{id}:
+ *   get:
+ *     summary: Get a specific record by ID
+ *     description: Returns a single record based on the ID provided.
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         required: true
+ *         description: The ID of the record to retrieve.
+ *         schema:
+ *           type: integer
+ *     responses:
+ *       200:
+ *         description: A single record.
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 id:
+ *                   type: integer
+ *                   example: 1
+ *                 name:
+ *                   type: string
+ *                   example: "John Doe"
+ */
