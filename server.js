@@ -10,13 +10,13 @@ const swaggerDocument = require('./swagger-output.json');
 const bodyParser = require('body-parser');
 
 
-
 // Serve Swagger UI
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 // Middleware to serve frontend static files
 app.use(express.static(path.join(__dirname, './cse341-project1')));
+app.use(express.json());
 
 // Use routes
 app.use(cors());
@@ -36,6 +36,10 @@ app.use((req, res, next) => {
 app.use('/', contactsRoute); 
 
 const port = 8080;
+
+process.on('uncaughtException', (err, origin) => {
+  console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
+});
 
 // Initialize the database before starting the server
 initDb()

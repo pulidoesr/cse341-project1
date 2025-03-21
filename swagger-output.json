@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "cse341-project1-d10a.onrender.com",
+  "host": ":cse341-project1-d10a.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -57,6 +57,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -123,7 +126,10 @@
         ],
         "responses": {
           "204": {
-            "description": "Updated Successfully"
+            "description": "No Content"
+          },
+          "412": {
+            "description": "Precondition Failed"
           },
           "500": {
             "description": "Internal Server Error"
@@ -142,7 +148,7 @@
         ],
         "responses": {
           "204": {
-            "description": "Deleted Successfully"
+            "description": "No Content"
           },
           "400": {
             "description": "Bad Request"

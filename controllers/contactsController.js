@@ -48,7 +48,6 @@ contacts.createContact = async(req, res) => {
     }
     } catch (error) {
       console.error("Error fetching contact:", error.message);
-      res.status(500).json({ message: "Internal Server Error" });
     };
   };
 
@@ -71,7 +70,6 @@ contacts.updateContact = async(req, res) => {
   }
   } catch (error) {
     console.error("Error fetching contact:", error);
-    res.status(500).json({ message: "Internal Server Error" });
   };
   };
 
@@ -90,7 +88,6 @@ contacts.deleteContact = async(req, res) => {
     }
     } catch (error) {
       console.error("Error fetching contact:", error.message);
-      res.status(404).json({ message: "Internal Server Error" });
     };
   };
 
